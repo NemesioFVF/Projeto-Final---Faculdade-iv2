@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Sanchez&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: auto;
+    height: auto;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(img/fundo1.jpg);
+    overflow-y: scroll;
+    background-size: cover;
+    animation: cores 50s linear infinite;
+}
+
+section:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    background: url(img/chuva.png);
+    animation: chuva 1s linear infinite;
+}
+
+.div0 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -5%;
+    position:relative;
+}
+
+.div1 {
+    position: absolute;
+    display: grid;
+    justify-content:center;
+    align-items: center;
+    text-align: justify;
+    color: white;
+    font-family: 'Old Standard TT', serif; 
+    top: 35%;
+    width: 70%;
+    margin-left: 13.5%;
+    font-size: 29px;
+    border: 2px solid rgba(255, 255, 255, 0.445);
+    background: rgba(255, 255, 255, 0.014);
+    box-shadow: 0 3px 5px rgb(0 0 0 / 30%);
+    backdrop-filter: blur(3px);
+    border-left: 40px solid rgba(255, 255, 255, 0);
+    border-right: 40px solid rgba(255, 255, 255, 0);
+}
+
+.div1 p {
+    margin: 0;
+}
+
+p {
+    margin: 1%;
+}
+
+.div1 h4, i{
+    display: grid;
+    justify-content:center;
+    align-items: center;
+    text-align: justify;
+    margin: auto;
+    line-height: 1.1;
+}
+
+.as {
+    color: rgb(219, 219, 219);
+    margin: 2%;
+    font-size: 35px;
+    text-decoration:none;
+    cursor: pointer;
+    font-family: 'Sanchez', serif;    
+}
+
+.as:hover{
+    text-decoration:underline ;
+    color: rgb(214, 192, 96);
+}
+
+#link, #eu {
+    width: 180px;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 1%;
+    margin-bottom: -2%;
+}
+
+#link {
+    margin-left: 45%;
+}
+
+#eu:hover{
+    box-shadow: 0 0 30px 1px rgb(248, 223, 109);
+    transition: 1s;
+}
+
+#logoLOL {
+    position: absolute;
+	left: 34%;
+	top: 12%;
+    width: 60vh;
+    cursor: pointer;
+}
+
+@keyframes cores {
+    0%, 100% {
+        filter:hue-rotate(0deg);
+       
+    }
+    50% {
+        filter:hue-rotate(360deg)
+    }
+}
+
+@keyframes chuva {
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 0% 100%;
+    }
+}
+
+::-webkit-scrollbar{width: 0px;}
+::-webkit-scrollbar-track {background:rgba(0, 0, 0, 0);}
+::-webkit-scrollbar-thumb{background: rgba(255, 255, 255, 0.336);}
+::-webkit-scrollbar-thumb:hover{background: rgba(255, 255, 255, 0.185);}
